@@ -129,7 +129,10 @@ Write-Host ("https://"+$test.ComputerName+":"+$test.RemotePort+"/ibm/console/")
 - Color strings
 
 ```
-
+# Color with Write-Host
+Write-Host "KO" -foreground red
+# Combine some Write-Host for concatenate strings
+Write-Host "The server is " -nonewline; Write-Host "OK " -foreground green -nonewline; Write-Host "or " -nonewline; Write-Host "KO" -foreground red
 ```
 
 - Final Application
